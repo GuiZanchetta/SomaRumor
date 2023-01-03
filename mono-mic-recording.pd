@@ -33,7 +33,7 @@
 #X msg 766 566 0;
 #X floatatom 1024 360 5 0 0 0 - - - 0;
 #X obj 798 530 text define -k mono-bank-number;
-#A set 54;
+#A set 3;
 #X obj 765 606 text get mono-bank-number;
 #X obj 1024 477 text set mono-bank-number;
 #X obj 992 220 r increment-mono-audio-list;
@@ -69,6 +69,7 @@
 #X obj 253 95 spigot;
 #X obj 254 62 delay 4500;
 #X obj 208 69 t f f;
+#X obj 323 28 r mic-reset-time;
 #X connect 0 0 1 0;
 #X connect 1 0 15 0;
 #X connect 1 0 43 0;
@@ -141,3 +142,4 @@
 #X connect 67 0 66 0;
 #X connect 68 0 65 0;
 #X connect 68 1 66 1;
+#X connect 69 0 67 1;
