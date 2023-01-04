@@ -4,7 +4,7 @@
 #X obj 904 79 declare -lib else;
 #X obj 904 102 declare -lib cyclone;
 #X obj 306 502 env~;
-#X obj 306 574 s mic-on-off;
+#X obj 306 604 s mic-on-off;
 #X obj 306 550 change;
 #X obj 306 526 <= 20;
 #N canvas 0 23 1280 699 audio-treatment 0;
@@ -1134,8 +1134,9 @@
 #X obj 51 414 sel 1;
 #X msg 51 438 1 1000 10;
 #X obj 904 56 presets;
+#X obj 306 574 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X connect 2 0 5 0;
-#X connect 4 0 3 0;
+#X connect 4 0 25 0;
 #X connect 5 0 4 0;
 #X connect 8 0 6 0;
 #X connect 11 0 5 1;
@@ -1152,3 +1153,4 @@
 #X connect 21 0 7 0;
 #X connect 22 0 23 0;
 #X connect 23 0 20 0;
+#X connect 25 0 3 0;
